@@ -46,8 +46,17 @@ const ProductDetails = () => {
             <h2 className="text-3xl font-semibold mt-4">{product.name}</h2>
             <p className="text-gray-700 mt-2">{product.description}</p>
             <p className="text-lg font-bold text-green-500 mt-4">
-              ${product.price}
+              Price: {product.price}
             </p>
+           
+            <div className="flex gap-x-5 w-[50%] ">
+              <button className="bg-blue-600 shadow-xl text-white p-3 px-3 mt-5 cursor-pointer">
+                Add To Cart
+              </button>
+              <button className=" bg-gray-100 shadow-2xl p-3 px-3 mt-5 cursor-pointer">
+                BUY NOW
+              </button>
+            </div>
           </div>
         </div>
       ) : (

@@ -15,7 +15,6 @@ const Products = () => {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
-    // Fetch categories first
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
@@ -127,7 +126,7 @@ const Products = () => {
       </div>
 
       {/* Product Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-4">
+      <div className="grid grid-cols- sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-6 p-4">
         {products.length > 0 ? (
           products.map((product, index) => (
             <Link key={index} to={`/product/${product._id}`}>

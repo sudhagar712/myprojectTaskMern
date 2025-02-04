@@ -7,7 +7,8 @@ import ProductDetails from './pages/ProductDetails'
 
 const App = () => {
   return (
-    <div className='px-0 md:px-3'>
+    <>
+      
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -16,7 +17,7 @@ const App = () => {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

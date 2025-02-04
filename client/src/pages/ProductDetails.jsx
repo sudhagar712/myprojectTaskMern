@@ -25,11 +25,11 @@ const ProductDetails = () => {
   }, [id]);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 mt-[90px]">
       {error && <p className="text-red-500">{error}</p>}
 
       <Link to="/">
-        <button className="bg-blue-500 p-3">Back to Home</button>
+        <button className="bg-blue-500 p-3 text-white">Back to Home</button>
       </Link>
 
       {product ? (
